@@ -1,0 +1,5 @@
+/Users/wxsn/Documents/GitHub/nlohmann/finance-surveillance/cmake-build-debug/CMakeFiles/EuronextSurveilllance.dir
+/Users/wxsn/Documents/GitHub/nlohmann/finance-surveillance/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/wxsn/Documents/GitHub/nlohmann/finance-surveillance/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/wxsn/Documents/GitHub/nlohmann/finance-surveillance/cmake-build-debug/CMakeFiles/EuronextSurveilllance_autogen_timestamp_deps.dir
+/Users/wxsn/Documents/GitHub/nlohmann/finance-surveillance/cmake-build-debug/CMakeFiles/EuronextSurveilllance_autogen.dir

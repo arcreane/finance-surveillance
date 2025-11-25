@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_EuronextSurveilllance_FILE /Users/wxsn/Documents/GitHub/nlohmann/finance-surveillance/cmake-build-debug/EuronextSurveilllance)
+set(__QT_DEPLOY_TARGET_EuronextSurveilllance_TYPE EXECUTABLE)
