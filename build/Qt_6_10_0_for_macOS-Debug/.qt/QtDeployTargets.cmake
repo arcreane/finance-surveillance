@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_EuronextSurveilllance_FILE /Users/wxsn/Documents/efrei/S9/C++/Euronext-Surveillance/build/Qt_6_10_0_for_macOS-Debug/EuronextSurveilllance)
+set(__QT_DEPLOY_TARGET_EuronextSurveilllance_TYPE EXECUTABLE)
