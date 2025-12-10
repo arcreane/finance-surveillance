@@ -1,0 +1,24 @@
+# ninja log v6
+2	956	1763561718976055460	EuronextSurveilllance_autogen/timestamp	9aa6ca1c10248db9
+2	956	1763561718976055460	EuronextSurveilllance_autogen/mocs_compilation.cpp	9aa6ca1c10248db9
+2	956	1763561718976055460	/Users/wxsn/Documents/efrei/S9/C++/Euronext-Surveillance/build/Qt_6_10_0_for_macOS-Debug/EuronextSurveilllance_autogen/timestamp	9aa6ca1c10248db9
+2	956	1763561718976055460	/Users/wxsn/Documents/efrei/S9/C++/Euronext-Surveillance/build/Qt_6_10_0_for_macOS-Debug/EuronextSurveilllance_autogen/mocs_compilation.cpp	9aa6ca1c10248db9
+973	1594	1763561719010551298	CMakeFiles/EuronextSurveilllance.dir/SpoofingProcessor.cpp.o	59a58b12d732ee43
+1597	1641	1763561719634239307	CMakeFiles/EuronextSurveilllance.dir/SearchableTableWidget.cpp.o	ed343db122641bdf
+961	1715	1763561718998432490	CMakeFiles/EuronextSurveilllance.dir/FraudMonitor.cpp.o	a3bfcbf7b1363786
+975	1759	1763561719012424426	CMakeFiles/EuronextSurveilllance.dir/WashProcessor.cpp.o	e10d43977c785e50
+967	1797	1763561719004456915	CMakeFiles/EuronextSurveilllance.dir/FloorProcessor.cpp.o	5220b14f57f2b5fe
+964	1842	1763561719001518953	CMakeFiles/EuronextSurveilllance.dir/CeilingProcessor.cpp.o	f444fa663eec77f
+969	1846	1763561719007053294	CMakeFiles/EuronextSurveilllance.dir/PumpDumpProcessor.cpp.o	87569e53220294b
+1642	1882	1763561719679194076	CMakeFiles/EuronextSurveilllance.dir/AlertObserver.cpp.o	96a9ec38d5cce5b4
+962	2519	1763561718999218783	CMakeFiles/EuronextSurveilllance.dir/DbConnector.cpp.o	f09b5cf7f73c7b67
+961	3753	1763561718998745699	CMakeFiles/EuronextSurveilllance.dir/multipleViewsWindow.cpp.o	3f67c82f3287784
+960	3758	1763561718997496948	CMakeFiles/EuronextSurveilllance.dir/EuronextSurveilllance_autogen/mocs_compilation.cpp.o	2b0505a459f28d89
+960	3991	1763561718997829490	CMakeFiles/EuronextSurveilllance.dir/main.cpp.o	d483d1a0875dfa69
+3991	4116	1763561722028413529	EuronextSurveilllance	21947b1715ea21e5
+42	83	1764082144447105249	EuronextSurveilllance_autogen/timestamp	9aa6ca1c10248db9
+42	83	1764082144447105249	EuronextSurveilllance_autogen/mocs_compilation.cpp	9aa6ca1c10248db9
+42	83	1764082144447105249	/Users/wxsn/Documents/efrei/S9/C++/Euronext-Surveillance/build/Qt_6_10_0_for_macOS-Debug/EuronextSurveilllance_autogen/timestamp	9aa6ca1c10248db9
+42	83	1764082144447105249	/Users/wxsn/Documents/efrei/S9/C++/Euronext-Surveillance/build/Qt_6_10_0_for_macOS-Debug/EuronextSurveilllance_autogen/mocs_compilation.cpp	9aa6ca1c10248db9
+83	615	1764082144488134047	CMakeFiles/EuronextSurveilllance.dir/FloorProcessor.cpp.o	5220b14f57f2b5fe
+615	806	1764082145019729145	EuronextSurveilllance	21947b1715ea21e5
