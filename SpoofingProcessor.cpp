@@ -11,13 +11,14 @@ std::optional<Alert> SpoofingProcessor::process(const Order& order)
 	for (const auto& order : historicOrders) {
 		if (order.getQuantity() >= bigOrderThreshold) {
 			totalLargeOrders++;
-			cancelTime = order.getTimestampCreated();
-			if (cancelTime <= baitTimeWindow) {
-
+			if (order.getStatus() == status::CANCELLED) {
+				cancelTime = order.getTimestampCancelled();
+				createTime = order.getTimestampCreated();
+				cancelLargeOrders++;
+				if (cancelTime - createTime <= baitTimeWindow) {
+					suspiciousOrders.push_back(order);
+				}
 			}
-			if (order.getStatus() == status::CANCELLED){}
-			cancelLargeOrders++;
-			suspiciousOrders.push_back(order);
 		}
 
 		if (cancelLargeOrders > 0) {
@@ -25,7 +26,7 @@ std::optional<Alert> SpoofingProcessor::process(const Order& order)
 		}
 
 		if (cancelLargeOrders >= bigOrderThreshold) {
-
+			return Alert(order.getId(), this->getId(), FraudType::SPOOFING, AlertSeverity::HIGH, AlertType::TECHNICAL, "Spoofing", order.getTimestampCreated());
 		}
 	}
 	return std::nullopt;

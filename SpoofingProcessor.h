@@ -16,7 +16,7 @@ private:
 	double bigOrderThreshold; // estimate the amount/number of big orders
 	time_t baitTimeWindow = 1; //time limit for bait
 	time_t cancelTime;
-	time_t reversedBaitTimeWindow;
+	time_t createTime;
 	std::vector<Order> suspiciousOrders;
 	std::vector<Order> historicOrders;
 };
