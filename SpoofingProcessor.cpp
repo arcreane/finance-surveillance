@@ -6,38 +6,27 @@ std::optional<Alert> SpoofingProcessor::process(const Order& order)
 	while (!historicOrders.empty() && historicOrders.begin()->getTimestampCreated() < order.getTimestampCreated() - window) {
 		historicOrders.erase(historicOrders.begin());
 	}
-	/*
-	if (order.getQuantity() > volumeHistoric)
-	{
-		if (order.getSide() == side::BUY)
-		{
-			suspiciousBuyOrders.push_back(order);
-		}
-		else
-		{
-			suspiciousSellOrders.push_back(order);
-		}
-		int totalBuyQuantity = 0;
-		int totalSellQuantity = 0;
-		for (Order suspected : suspiciousBuyOrders)
-		{
-			if (order.getIdFirm() == suspected.getIdFirm())
-			{
-				totalBuyQuantity += suspected.getQuantity();
+	int totalLargeOrders = 0;
+	int cancelLargeOrders = 0;
+	for (const auto& order : historicOrders) {
+		if (order.getQuantity() >= bigOrderThreshold) {
+			totalLargeOrders++;
+			cancelTime = order.getTimestampCreated();
+			if (cancelTime <= baitTimeWindow) {
+
 			}
+			if (order.getStatus() == status::CANCELLED){}
+			cancelLargeOrders++;
+			suspiciousOrders.push_back(order);
 		}
-		for (Order suspected : suspiciousSellOrders)
-		{
-			if (order.getIdFirm() == suspected.getIdFirm())
-			{
-				totalSellQuantity += suspected.getQuantity();
-			}
+
+		if (cancelLargeOrders > 0) {
+			cancelRatio = static_cast<double>(cancelLargeOrders / totalLargeOrders);
 		}
-		if ((totalBuyQuantity / totalSellQuantity) > percentageVolumeThreshlod)
-		{
-			return Alert(order.getId(), this->getId(), FraudType::SPOOFING, AlertSeverity::HIGH, AlertType::VOLUME, "Spoofing scheme detected");
+
+		if (cancelLargeOrders >= bigOrderThreshold) {
+
 		}
 	}
-	*/
 	return std::nullopt;
 }
