@@ -1,7 +1,7 @@
 EuronextSurveilllance
 
-A C++ / Qt6-based desktop application for real-time market surveillance and fraud detection inspired by Euronext-style 
-monitoring systems. The project implements a modular architecture with processors, observers, and UI components to visualize 
+A C++ / Qt6-based desktop application for real-time market surveillance and fraud detection monitoring systems for Euronext.
+The project implements a modular architecture with processors, observers, and UI components to visualize 
 and detect suspicious trading behaviors such as spoofing, pump-and-dump, wash trading, and price ceiling/floor.
 
 Features
