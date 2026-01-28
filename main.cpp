@@ -9,6 +9,7 @@
 #include "FraudMonitor.cpp"
 #include "ChartFraudObserver.h"
 #include "ChartOrderObserver.h"
+#include "QuoteProcessor.h"
 
 int main(int argc, char* argv[]) {
     QApplication app(argc, argv);
@@ -24,6 +25,7 @@ int main(int argc, char* argv[]) {
     fraudMonitor.addProcessor(std::make_shared<FloorProcessor>(5));
 	fraudMonitor.addProcessor(std::make_shared<PumpDumpProcessor>());
 	fraudMonitor.addProcessor(std::make_shared<SpoofingProcessor>());
+	fraudMonitor.addProcessor(std::make_shared<QuoteProcessor>());
 	//fraudMonitor.addProcessor(std::make_shared<WashProcessor>());
 
     // Add observers
