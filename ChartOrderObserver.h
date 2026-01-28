@@ -1,8 +1,8 @@
 #pragma once
 #include "IOrderObserver.h"
 #include "multipleViewsWindow.h"
-#include <memory>
-#include <map>
+#include "memory"
+#include "map"
 
 class ChartOrderObserver : public IOrderObserver {
 public:
