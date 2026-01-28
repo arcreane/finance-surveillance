@@ -20,42 +20,34 @@ Features
 Project Structure
 
 EuronextSurveilllance/
-│
-├── main.cpp
-│
-├── UI/
-│   ├── mainwindow.ui
-│   ├── multipleViewsWindow.h/.cpp
-│   ├── SearchableTableWidget.h/.cpp
-│
-├── Domain/
-│   ├── order.h
-│   └── Alert.h
-│
-├── Observers/
-│   ├── IOrderObserver.h
-│   ├── IFraudObserver.h
-│   ├── AlertObserver.h/.cpp
-│   ├── ChartOrderObserver.h
-│   └── ChartFraudObserver.h
-│
-├── Processors/
-│   ├── IProcessor.h
-│   ├── FraudMonitor.cpp
-│   ├── SpoofingProcessor.h/.cpp
-│   ├── PumpDumpProcessor.h/.cpp
-│   ├── WashProcessor.h/.cpp
-│   ├── QuoteProcessor.h/.cpp
-│   ├── CeilingProcessor.h/.cpp
-│   └── FloorProcessor.h/.cpp
-│
-├── Database/
-│   └── DbConnector.h/.cpp
-│
-├── nlohmann/
-│   └── json.hpp (optional JSON support)
-│
-└── CMakeLists.txt
+main.cpp
+UI:
+    mainwindow.ui
+    multipleViewsWindow.h/.cpp
+    SearchableTableWidget.h/.cpp
+Domain:
+    order.h
+    Alert.h
+Observers:
+    IOrderObserver.h
+    IFraudObserver.h
+    AlertObserver.h/.cpp 
+    ChartOrderObserver.h
+    ChartFraudObserver.h
+Processors:
+    IProcessor.h
+    FraudMonitor.cpp
+    SpoofingProcessor.h/.cpp
+    PumpDumpProcessor.h/.cpp
+    WashProcessor.h/.cpp
+    QuoteProcessor.h/.cpp
+    CeilingProcessor.h/.cpp
+    FloorProcessor.h/.cpp
+Database:
+    DbConnector.h/.cpp
+nlohmann:
+    json.hpp
+CMakeLists.txt
 
 Requirements
 •	CMake ≥ 3.16
