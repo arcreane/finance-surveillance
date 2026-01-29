@@ -12,6 +12,11 @@ private:
 	time_t window;
 	time_t detectionWindow;
 	double volumeHistoric;
+	double cancelRatio = 0.9; // suppose cancel rate to 0.9
+	double bigOrderThreshold; // estimate the amount/number of big orders
+	time_t baitTimeWindow = 1; //time limit for bait
+	time_t cancelTime;
+	time_t createTime;
 	std::vector<Order> suspiciousOrders;
 	std::vector<Order> historicOrders;
 };

@@ -1,6 +1,6 @@
 #pragma once
-#include <ctime>
-#include <string>
+#include "ctime"
+#include "string"
 
 enum class timeInForce {
 	GTC,
@@ -52,6 +52,7 @@ private:
 	status _status;
 	time_t _timestampCreated;
 	time_t _timestampExecuted;
+	time_t _timestampCancelled;
 	int _remainingQuantity;
 	double _totalvalue;
 	instrumentType _instrumentType;

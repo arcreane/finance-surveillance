@@ -11,16 +11,45 @@ find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets Charts)
 
 add_executable(EuronextSurveilllance
         main.cpp
-        FraudMonitor.cpp
+
+        # UI
+        mainwindow.ui
         multipleViewsWindow.cpp
-        DbConnector.cpp
-        CeilingProcessor.cpp
-        FloorProcessor.cpp
-        PumpDumpProcessor.cpp
-        SpoofingProcessor.cpp
-        WashProcessor.cpp
+        multipleViewsWindow.h
         SearchableTableWidget.cpp
+        SearchableTableWidget.h
+
+        # Domain
+        order.h
+        Alert.h
+
+        # Observers
         AlertObserver.cpp
+        AlertObserver.h
+        ChartOrderObserver.h
+        ChartFraudObserver.h
+        IFraudObserver.h
+        IOrderObserver.h
+
+        # Processors / Monitoring
+        IProcessor.h
+        FraudMonitor.cpp
+
+        DbConnector.cpp
+        DbConnector.h
+
+        CeilingProcessor.cpp
+        CeilingProcessor.h
+        FloorProcessor.cpp
+        FloorProcessor.h
+        PumpDumpProcessor.cpp
+        PumpDumpProcessor.h
+        QuoteProcessor.cpp
+        QuoteProcessor.h
+        SpoofingProcessor.cpp
+        SpoofingProcessor.h
+        WashProcessor.cpp
+        WashProcessor.h
 )
 
 target_include_directories(EuronextSurveilllance PRIVATE
@@ -31,3 +60,4 @@ target_include_directories(EuronextSurveilllance PRIVATE
 target_link_libraries(EuronextSurveilllance PRIVATE
         Qt6::Core Qt6::Gui Qt6::Widgets Qt6::Charts
 )
+
